@@ -11,7 +11,7 @@ COPY . .
 
 # Install Python dependencies
 RUN pip install --upgrade pip \
-    && pip install --no-cache-dir -r <(python -c "import toml; print('\n'.join(toml.load('pyproject.toml')['project']['dependencies']))")
+    && pip install --no-cache-dir -r requirements.txt
 
 # Expose the port Flask runs on
 EXPOSE 5000
