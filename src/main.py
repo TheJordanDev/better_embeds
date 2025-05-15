@@ -30,7 +30,7 @@ def home():
     return "<html><body>Home</body></html>", 200, {'Content-Type': 'text/html; charset=utf-8'}
 
 def main():
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 if __name__ == "__main__":
     main()
